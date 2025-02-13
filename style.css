@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #001b40;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px
+}
+
+.card {
+    background: #fff;
+    width: 280px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card > div {
+    line-height: 1.5;
+}
+
+.card h2 {
+    margin:0 0 10px 0;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.card h2.feedback-heading {
+    margin: 20px 0 40px;
+    font-size: 32px;
+}
+
+.card p {
+    margin: 0;
+    padding: 0;
+}
+
+.card ul {
+    margin:10px 0 30px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.card ul li {
+    position: relative;
+    margin-bottom: 6px;
+    padding-left: 30px;
+}
+
+.card ul li::before {
+    position: absolute;
+    content: "\2713";
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #94caeb;
+    color: #001b40;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.card button {
+    box-sizing: border-box;
+    background: none;
+    width: 100%;
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button.primary {
+    color: #001b40;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border: 2px solid #001b40;
+    border-radius: 20px;
+}
+
+.card button.secondary {
+    color: #007bff;
+    padding: 10px;
+}
