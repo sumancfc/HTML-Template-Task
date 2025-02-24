@@ -4,7 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a {
     text-decoration: none;
+}
+
+*:focus {
     outline: none;
 }
 
@@ -13,9 +19,7 @@ body {
     padding: 0;
     background-color: #f4f7fa;
     color: #001b40;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font: 400 16px "Roboto", sans-serif;
 }
 
 .card-container {
@@ -49,7 +53,7 @@ body {
 .card h2 {
     margin:0 0 10px 0;
     font-size: 24px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.01em;
 }
 
 .card h2.feedback-heading {
@@ -90,10 +94,8 @@ body {
 }
 
 .card button {
-    box-sizing: border-box;
     background: none;
     width: 100%;
-    margin: 0 5px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -110,5 +112,4 @@ body {
 
 .card button.secondary {
     color: #007bff;
-    padding: 10px;
 }
